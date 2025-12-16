@@ -1,10 +1,12 @@
 body{
     background-image: url("Images/1x/backgound.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black;
     font-family: "alfarn-2", sans-serif;
     font-weight: 700;
     font-style: normal;
-    padding: 0;
+    padding: 3rem;
     margin: 0;
 }
 img{
@@ -71,6 +73,7 @@ display: block;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 10px;  
+    gap: 1rem;
 }
 .card{
     padding: 10px;
@@ -78,7 +81,6 @@ display: block;
     background-color: red;
     text-align: center;
     text-decoration: none;
-    max-height: 450px;
 }
 .card-label{
     text-decoration: none;
@@ -96,4 +98,39 @@ display: block;
     display: flex;
     flex-direction: column;
 
+}
+.nored{
+    background-color: transparent;
+    border: none;
+}
+.nored img{
+    margin: 1rem;
+}
+label[for=product-size]{
+    background-color: red;
+}
+.border img{
+    border: 2rem solid red;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+form input{
+     background-color: white;
+    border: 1rem solid red;
+    padding: 2rem;
+}
+textarea{
+    background-color: white;
+    border: 1rem solid red;
+
+    padding: 2rem;
+}
+.paragraph-about{
+     padding: 10px;
+    border: 2px solid black;
+    background-color: red;
+    font-size: 30px;
 }
